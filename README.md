@@ -15,7 +15,7 @@ Land Surface Temperature (LST) is an important indicator urban planners use to m
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 1. Download the necessary datasets from Landsat 8 and NOAA (see Preprocessing for details).
 2. Open the `Preprocessing.ipynb` notebook in Google Colab.
 3. Mount your Google Drive containing Landsat 8 and NOAA files.
@@ -40,23 +40,21 @@ Once paths are set, run the notebook cells to generate 64×64 patches and clean 
 
 ---
 
-## 📂 Datasets
+## Datasets
 - **Cleaned Meteorological Data:** [Google Drive File](https://drive.google.com/file/d/1ss4D_ZkzQWdW9VIsAOJFZBPHo05u04sR/view?usp=drive_link)
 - **Final cleaned LST with Meteo:** [Google Drive Folder](https://drive.google.com/drive/folders/1nXb8mzun6akRigNKNxWN9S0lplsE6m3V?usp=drive_link)
 
 ---
 
-## 🔍 Models
-<details>
+## Models
 - **Vit+MLP**: Vision Transformer baseline model, enhanced through hyperparameter tuning and selective unfreezing of the final layer.
 - **ViT+LSTM**: Vision Transformer backbone fused with a 6-hour LSTM head to incorporate sequential meteorological inputs.
 - **VIT+PINN+MLP**: Physics-informed Vision Transformer integrating Newtonian cooling priors to enforce physically realistic temperature decay patterns. Best out of the 3 models
 
-</details>
 
 ---
 
-## 🧪 Testing
+## Testing
 We trained our models on data from 2018 to 2022 and evaluated our implementations using held-out LST and meteorological records from **2023**.
 
 To run tests:
@@ -78,5 +76,5 @@ ALl models achieved very reasonable results (RMSE < 0.35 °C). Our best model wa
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
