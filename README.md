@@ -27,12 +27,12 @@ Land Surface Temperature (LST) is an important indicator urban planners use to m
 ---
 
 ## Semantic Segmentation
-This notebook shows our attempt to compute 1-meter Ground Surface Composite Feature Map (GSCFM) layers derived from OpenStreetMap data. Pixels were classified into five land cover categories: buildings, vegetation, soil, roads, and water. Ultimately, this method and the corresponding model were discarded as it could not match the performance of other architectures that rely on the NDVI, NDBI, UNDWI layers.
+This notebook shows our attempt to compute 1-meter Ground Surface Composite Feature Map (GSCFM) layers derived from OpenStreetMap data. Pixels were classified into five land cover categories: buildings, vegetation, soil, roads, and water. Ultimately, this method and the corresponding model were discarded as it could not match the performance of other architectures that rely on the NDVI, NDBI, MNDWI layers.
 
 ## Preprocessing
 **Setup Instructions:**
 1. **Download Official Landsat 8 Data**
-   - From USGS or Google Earth, download the NDVI, NDBI, and NDWI bands.
+   - From USGS or Google Earth, download the NDVI, NDBI, and MNDWI bands.
    - Choose New York City if you want to replicate our results, but we encourage you to try our models on different cities.
 2. **Download Hourly Meteorological Data**
    - For New York City CSVs, download from NOAA Global Hourly: https://www.ncei.noaa.gov/access/search/data-search/global-hourly
