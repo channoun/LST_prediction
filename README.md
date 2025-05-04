@@ -54,7 +54,7 @@ Once paths are set, run the notebook cells to generate 64×64 patches and clean 
 - **CNNMLP**: Baseline custom ResNet architecture, trained using GSCFM. This is the model we initially proposed. 
 - **Vit+MLP**: Vision Transformer baseline model, enhanced through hyperparameter tuning and selective unfreezing of the final layer.
 - **ViT+LSTM**: Vision Transformer backbone fused with a 6-hour LSTM head to incorporate sequential meteorological inputs.
-- **VIT+PINN+MLP**: Physics-informed Vision Transformer integrating Newtonian cooling priors to enforce physically realistic temperature decay patterns. Best out of the 3 models
+- **ViT+PINN+MLP**: Physics-informed Vision Transformer integrating Newtonian cooling priors to enforce physically realistic temperature decay patterns. Best out of the 3 models
 
 ---
 
