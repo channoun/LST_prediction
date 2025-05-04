@@ -7,10 +7,10 @@ Land Surface Temperature (LST) is an important indicator urban planners use to m
 
 ## Project Hierarchy
 ```
-├── Models/             # Model implementations
+├── Models/                    # Model implementations
 ├── Preprocessing/             # Jupyter notebook for data prep
 ├── Testing/                   # Test scripts & evaluation notebooks
-├── Semantic Segmentation/                   # Image segmentation related to failed attempt
+├── Semantic Segmentation/     # Image segmentation related to failed attempt
 └── README.md                  # This file
 ```
 
