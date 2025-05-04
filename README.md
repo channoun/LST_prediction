@@ -26,6 +26,9 @@ Land Surface Temperature (LST) is an important indicator urban planners use to m
 
 ---
 
+## Semantic Segmentation
+This notebook shows our attempt to compute 1-meter Ground Surface Composite Feature Map (GSCFM) layers derived from OpenStreetMap data. Pixels were classified into five land cover categories: buildings, vegetation, soil, roads, and water. Ultimately, this method and the corresponding model were discarded as it could not match the performance of other architectures that rely on the NDVI, NDBI, UNDWI layers.
+
 ## Preprocessing
 **Setup Instructions:**
 1. **Download Official Landsat 8 Data**
@@ -48,10 +51,10 @@ Once paths are set, run the notebook cells to generate 64×64 patches and clean 
 ---
 
 ## Models
+- **CNNMLP**: Baseline custom ResNet architecture, trained using GSCFM. This is the model we initially proposed. 
 - **Vit+MLP**: Vision Transformer baseline model, enhanced through hyperparameter tuning and selective unfreezing of the final layer.
 - **ViT+LSTM**: Vision Transformer backbone fused with a 6-hour LSTM head to incorporate sequential meteorological inputs.
 - **VIT+PINN+MLP**: Physics-informed Vision Transformer integrating Newtonian cooling priors to enforce physically realistic temperature decay patterns. Best out of the 3 models
-
 
 ---
 
@@ -66,7 +69,7 @@ To run tests:
 ---
 
 ## Results
-ALl models achieved very reasonable results (RMSE < 0.35 °C). Our best model was the Physics-informed ViT, achieving and RMSE of **0.21 °C**.
+The CNN+MLP model showed poor performance because semantic segmentation resulted in a lot of mislabeled/missing pixels. All transformer models achieved very reasonable results (RMSE < 0.35 °C). Our best model was the Physics-informed ViT, achieving and RMSE of **0.21 °C**.
 
 ---
 
