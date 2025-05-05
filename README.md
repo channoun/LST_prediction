@@ -69,7 +69,7 @@ To run tests:
 ---
 
 ## Results
-The CNN+MLP model showed poor performance because semantic segmentation resulted in a lot of mislabeled/missing pixels. All transformer models achieved very reasonable results (RMSE < 0.35 °C). Our best model was the Physics-informed ViT, achieving and RMSE of **0.21 °C**.
+The CNN+MLP model showed poor performance because semantic segmentation resulted in a lot of mislabeled/missing pixels. All transformer models achieved very reasonable results (RMSE < 0.32 °C). Our best model was the Physics-informed ViT, achieving and RMSE of **0.224 °C**.
 
 ---
 
